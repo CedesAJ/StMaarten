@@ -52,6 +52,7 @@
     }
 
     .label{
+      font-family:Arial, Helvetica, sans-serif;
       margin-top:15px;
       font-size:clamp(1rem, 2vw, 1.5rem);
       text-transform:uppercase;
