@@ -1,4 +1,4 @@
-const vacationDate = new Date("May 29, 2026 00:00:00").getTime();
+    const vacationDate = new Date("May 29, 2026 00:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
