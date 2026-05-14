@@ -31,9 +31,10 @@
     }
 
     h1{
+      font-family:"Dancing Script", Lucida Handwriting", cursive;
       font-size:clamp(2rem, 5vw, 4rem);
       margin-bottom:15px;
-      color:#ffd166;
+      color:#f3f3f3;
     }
 
     p{
