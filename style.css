@@ -2,7 +2,6 @@
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
     }
 
     body{
@@ -38,12 +37,14 @@
     }
 
     p{
+      font-family:Arial, Helvetica, sans-serif;
       font-size:clamp(1rem, 2vw, 1.3rem);
       margin-bottom:35px;
       color:#f3f3f3;
     }
 
     .days-left{
+      font-family:Arial, Helvetica, sans-serif;
       font-size:clamp(4rem, 15vw, 9rem);
       font-weight:bold;
       color:#00d4ff;
