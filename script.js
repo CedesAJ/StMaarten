@@ -1,18 +1,31 @@
-var target_mili_sec = new Date("May 29, 2026").getTime();
+const vacationDate = new Date("May 29, 2026 00:00:00").getTime();
 
-function timer() {
-    var now_mili_sec = new Date().getTime();
-    var remaining_sec = Math.floor( (target_mili_sec - now_mili_sec) / 1000 );
+    function updateCountdown() {
 
-     var day = Math.floor(remaining_sec / (3600 * 24));
-     var hour = Math.floor((remaining_sec % (3600 * 24)) / 3600);
-     var min = Math.floor((remaining_sec % 3600) / 60);
-     var sec = Math.floor(remaining_sec % 60);
+      const now = new Date().getTime();
 
-      document.querySelector("#day").innerHTML = day;
-      document.querySelector("#hour").innerHTML = hour;
-      document.querySelector("#min").innerHTML = min;
-      document.querySelector("#sec").innerHTML = sec;
-}
+      const distance = vacationDate - now;
 
-setInterval(timer, 1000); //1000 it means 1 sec
+      const days = Math.ceil(distance / (1000 * 60 * 60 * 24));
+
+      if(distance > 0){
+
+        document.getElementById("days").innerHTML = days;
+
+      } else {
+
+        document.getElementById("days").style.display = "none";
+
+        document.querySelector(".label").style.display = "none";
+
+        document.getElementById("message").innerHTML =
+
+          "✈️ Your Sint Maarten vacation has started! 🌴";
+
+      }
+
+    }
+
+    updateCountdown();
+
+    setInterval(updateCountdown, 1000);
