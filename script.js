@@ -7,7 +7,7 @@
       const days = Math.ceil(distance / (1000 * 60 * 60 * 24));
       if(distance > 0){
         document.getElementById("days").innerHTML = days;
-      } else if {
+      } else if (now > vacationEnd){
         document.getElementById("days").style.display = "none";
         document.querySelector(".label").style.display = "none";
         document.getElementById("message").innerHTML =
