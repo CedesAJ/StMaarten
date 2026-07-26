@@ -1,5 +1,5 @@
-    const vacationDate = new Date("May 29, 2026 00:00:00").getTime();
-    const vacationEnd = new Date("June 3, 2026 00:00:00").getTime();
+    const vacationDate = new Date("July 31, 2026 00:00:00").getTime();
+    const vacationEnd = new Date("August 3, 2026 00:00:00").getTime();
         
     function updateCountdown() {
       const now = new Date().getTime();
@@ -11,12 +11,12 @@
         document.getElementById("days").style.display = "none";
         document.querySelector(".label").style.display = "none";
         document.getElementById("message").innerHTML =
-          "Your Sint Maarten vacation has ended😕";
+          "Your Jamaica vacation has ended😕";
       } else {
         document.getElementById("days").style.display = "none";
         document.querySelector(".label").style.display = "none";
         document.getElementById("message").innerHTML =
-          "✈️ Your Sint Maarten vacation has started! 🌴";
+          "✈️ Your Jamaica vacation has started! 🌴";
       }
     }
     
